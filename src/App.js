@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import styled from 'styled-components';
+import { colorPrincipal } from './colors';
+import './styles.css';
 
-function App() {
+const Header = styled.header`
+  background: ${colorPrincipal};
+  text-align: center;
+  border-radius: 0.2em;
+  color: #FFF;
+  padding: 0.3em;
+  margin: 0.3em;
+  font-size: 14px;
+`;
+
+const Subtitle = styled.h2`
+  color: ${colorPrincipal};
+`;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header>
+        <h1>
+          Styled Components
+        </h1>
+      </Header>
+      <Subtitle>
+        Ejemplo de Titulo
+      </Subtitle>
     </div>
   );
-}
+};
 
 export default App;
