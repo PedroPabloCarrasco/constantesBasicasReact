@@ -58,6 +58,12 @@ const MoveStyled = styled(Move)`
   text-align: center;
 `
 
+const Input = styled.input `
+padding: 1em;
+border: solid blue;
+`
+
+
 const App = () => {
   return (
     <div>
@@ -65,6 +71,9 @@ const App = () => {
         <h1>
           Styled Components
         </h1>
+        <Input
+        placeholder='Ingresa el texto'
+        />
       </Header>
 
       <Button>
